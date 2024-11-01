@@ -26,7 +26,8 @@ nav{
   line-height: 76px;
   font-weight: 500;
   color: #000000;
-  border-bottom: 128px;
+  padding-top: 128px;
+  padding-bottom: 32px;
 }
 
 .header__description {
@@ -57,18 +58,27 @@ nav{
   color: #838383;
 }
 
-.nav {
-  /* Add flex properties here */
+
+.nav__links, nav{
+  display: flex;
+  justify-content: flex-end;
 }
 
-.nav__logo {
+nav{
+  display: flex;
+}
+
+.nav__link{
+  display: flex;
+  justify-content: flex-end;
+
 }
 
 .nav__links {
   display: flex;
   list-style: none;
   margin: 8px 0 0;
-  padding-left: 170px;
+  
 }
 
 .nav__link {
@@ -78,10 +88,19 @@ nav{
   text-decoration: none;
   font-weight: 8px;
   padding-right: 30px;
-  justify-self: flex-end;
+  justify-content: flex-end;
+
 
 }
 
 ul{
   padding: 0;
+}
+
+h1{
+  margin: 0;
+}
+
+p{
+  margin: 0;
 }
